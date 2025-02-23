@@ -7,7 +7,6 @@ async function loadBooks() {
     return JSON.parse(data);
 }
 
-// Example usage
 (async () => {
     const books = await loadBooks();
     console.log(books);
