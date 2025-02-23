@@ -1,3 +1,5 @@
+//Task : Left and right up and down, away we go.
+
 import fs from 'fs';
 
 function analyzeTree(node, level) {
@@ -27,7 +29,7 @@ function analyzeTree(node, level) {
     return { sum, maxDepth, count };
 }
 
-const rawData = fs.readFileSync('./nodes.json', 'utf8');
+const rawData = fs.readFileSync('./sources/nodes.json', 'utf8');
 const tree = JSON.parse(rawData);
 
 const result = analyzeTree(tree, 1);
