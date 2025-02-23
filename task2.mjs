@@ -1,3 +1,5 @@
+//Task : Flatten those numbers
+
 import fs from 'fs'; 
 const data = JSON.parse(fs.readFileSync('sources/arrays.json', 'utf8'));
 
