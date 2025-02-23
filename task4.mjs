@@ -115,7 +115,6 @@ function BooksByAuthorFirstName(books) {
 async function runTests() {
     const books = await loadBooks();
 
-    // Run basic tests
     isEqual(BooksStartingWithThe(books).length, 3, "Books starting with 'The'");
     isEqual(BooksByAuthorsWithT(books).length, 4, "Books by authors with 'T' in name");
     isEqual(BooksAfter92(books), 1, "Books published after 1992");
@@ -133,7 +132,6 @@ async function runTests() {
         "Chronologically sorted books start with the oldest"
     );
 
-    // Test functions without throwing errors
     dosNotThrowError(() => BooksStartingWithThe(books), "Function should not throw errors");
     dosNotThrowError(() => BooksByAuthorsWithT(books), "Function should not throw errors");
     dosNotThrowError(() => BooksAfter92(books), "Function should not throw errors");
